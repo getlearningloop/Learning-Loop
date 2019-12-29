@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="en">
+
+<head>
+
+    <title>Learning Loop | A social learning platform</title>
     <meta charset="UTF-8">
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <style>
-      body{
-        background: #50a4fb;
-      }
-      img{
-        width: 100%;
-      }
-      span{
-        color: white;
-        font-size: 24px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-      <span>A social learning platform which connects people/resources/experiences<span>
-    </main>
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="team" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+
+            <span class="spinner-rotate"></span>
+
+        </div>
+    </section>
+
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="index.html" class="navbar-brand"><img src="images/default-monochrome-white.svg" width="240"></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FEATURE -->
+    <section id="home" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="home-info">
+                        <h1>A social platform connecting people, resources & experiences</h1>
+                        <form action="" method="get" class="online-form">
+                            <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                            <button type="submit" class="form-control">Get Invite</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>
